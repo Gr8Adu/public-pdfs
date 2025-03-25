@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f8ff; }
+        nav { background-color: #4caf50; padding: 1rem; text-align: center; }
+        .navbar { list-style-type: none; margin: 0; padding: 0; overflow: hidden; display: flex; justify-content: center; }
+        .navbar li { margin: 0 15px; }
+        .navbar li a { text-decoration: none; color: white; font-size: 1.1rem; padding: 14px 20px; display: inline-block; }
+        .navbar li a:hover { background-color: #45a049; border-radius: 5px; }
+        .services { display: flex; flex-direction: column; align-items: center; padding: 2rem; }
+        .service { display: flex; align-items: center; margin-bottom: 2rem; }
+        img { width: 150px; margin-right: 1rem; }
+        button { background-color: #4caf50; color: white; padding: 0.5rem 1rem; border: none; cursor: pointer; }
+        footer { background-color: #333; color: white; text-align: center; padding: 1rem 0; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Our Services</h1>
+    </header>
+    <div class="services">
+        <div class="service">
+            <img src="ev_charging.jpg" alt="EV Charging">
+            <div>
+                <h3>EV Charging</h3>
+                <p>We provide top-notch EV charging stations for your needs.</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="solar_panels.jpg" alt="Solar Panels">
+            <div>
+                <h3>Solar Panel Installation</h3>
+                <p>Eco-friendly solar energy solutions tailored for your home.</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="smart_home.jpg" alt="Smart Home Management">
+            <div>
+                <h3>Smart Home Management</h3>
+                <p>Enhance your energy efficiency with smart technology.</p>
+            </div>
+        </div>
+        <button onclick="location.href='signup.html'">Book Consultation</button>
+    </div>
+    <footer>
+        <a href="contact.html">Contact Us</a> | <a href="privacy.html">Privacy Policy</a> | <a href="services.html">Learn More</a>
+    </footer>
+</body>
+</html>
