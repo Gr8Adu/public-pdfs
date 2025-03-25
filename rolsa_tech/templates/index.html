@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rosla Technologies</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+        /* General styles */
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation bar */
+        .w3-bar {
+            background-color: #5E9648; /* Green */
+            color: white;
+            padding: 8px;
+        }
+        .w3-bar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        /* Hero Section with Background Image */
+        .hero-image {
+            background-image: url('your-background-image.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            height: 400px; /* Adjust as needed */
+            position: relative; /* Required for text overlay */
+            color: white;
+            text-align: center;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .hero-text p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .hero-text button {
+            padding: 10px 20px;
+            background-color: #4caf50; /* Green button */
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero-text button:hover {
+            background-color: #388e3c; /* Darker green on hover */
+        }
+
+        /* Dropdown menus */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .dropdown button {
+            background-color: #5E9648; /* Green */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ddd;
+            min-width: 200px;
+            list-style: none;
+            padding: 10px 0;
+            z-index: 1;
+        }
+
+        .dropdown-menu li {
+            padding: 10px 15px;
+            color: #5E9648;
+            cursor: pointer;
+        }
+
+        .dropdown-menu li:hover {
+            background-color: #f0f0f0;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #5E9648; /* Green */
+            color: white;
+            text-align: center;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="w3-bar">
+        <img src="logo.png" alt="Rolsa Logo" style="height: 40px; margin-right: 20px;">
+        <a href="#home" class="w3-bar-item w3-button">Home</a>
+        <a href="#about" class="w3-bar-item w3-button">About Us</a>
+        <a href="#services" class="w3-bar-item w3-button">Services</a>
+        <a href="#login" class="w3-bar-item w3-button">Login</a>
+        <a href="#signup" class="w3-bar-item w3-button">Sign Up</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="#content" class="w3-bar-item w3-button">Content</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Welcome to Rolsa Technologies</h1>
+            <p>Empowering sustainability through innovation</p>
+            <button onclick="location.href='#learn-more'">Learn More</button>
+            <button onclick="location.href='#get-started'">Get Started</button>
+        </div>
+    </div>
+
+    <!-- Dropdown Section -->
+    <div class="dropdown">
+        <button>Services</button>
+        <ul class="dropdown-menu">
+            <li>Solar Energy Installation</li>
+            <li>EV Charging</li>
+            <li>Smart Home Management</li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button>Features</button>
+        <ul class="dropdown-menu">
+            <li>Carbon Questionnaire Calculation</li>
+            <li>Energy Tracker</li>
+            <li>Schedule Consultation</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Rolsa Technologies. All rights reserved.</p>
+        <div class="footer-buttons" style="margin-top: 10px;">
+            <a href="privacy.html" class="footer-button" style="padding: 10px 15px; background-color: white; color: #0d47a1; text-decoration: none; border-radius: 5px; margin-right: 10px;">Privacy Policy</a>
+            <a href="contact.html" class="footer-button" style="padding: 10px 15px; background-color: white; color: #0d47a1; text-decoration: none; border-radius: 5px; margin-right: 10px;">Contact Us</a>
+            <a href="learn-more.html" class="footer-button" style="padding: 10px 15px; background-color: white; color: #0d47a1; text-decoration: none; border-radius: 5px;">Learn More</a>
+        </div>
+    </div>
+</body>
+</html>

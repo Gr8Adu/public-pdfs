@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Us - Rosla Technologies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Light background */
+            color: #333333; /* General text color */
+        }
+
+        /* Header with Navigation */
+        .header {
+            background-color: #0d47a1; /* Dark Blue */
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .header img {
+            height: 50px; /* Logo size */
+            margin-right: 20px;
+        }
+
+        .nav-links {
+            flex: 1;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            padding: 32px 16px;
+            max-width: 1100px;
+            margin: 20px auto;
+            background: #ffffff; /* White background */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        h1, h2 {
+            color: #5E9648; /* Dark Green */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        /* Subheading and Content Layout */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+
+        .left-column, .right-column {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .left-column {
+            margin-right: 20px;
+        }
+
+        .right-column h3 {
+            margin-bottom: 12px;
+        }
+
+        .team-section {
+            margin-top: 32px;
+        }
+
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 16px;
+        }
+
+        .team-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 16px;
+        }
+
+        .footer {
+            background-color: #0d47a1; /* Dark Blue */
+            color: white;
+            text-align: center;
+            padding: 16px;
+            margin-top: 30px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content-row {
+                flex-direction: column;
+            }
+
+            .left-column {
+                margin-right: 0;
+            }
+
+            .team-photo {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <img src="logo.png" alt="Rosla Technologies Logo">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="blog.html">Blog</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <div class="section">
+        <h1>About Rosla Technologies</h1>
+        <div class="content-row">
+            <div class="left-column">
+                <h2>Sustainable Energy with Greentech</h2>
+                <p>
+                    Rosla Technologies is committed to sustainable innovations through Greentech solutions.
+                    By focusing on energy-efficient technologies, we aim to create a greener and cleaner future.
+                </p>
+            </div>
+            <div class="right-column">
+                <h2>Our Mission and Vision</h2>
+                <p>
+                    Our mission is to empower organizations with secure and scalable digital solutions
+                    while staying committed to sustainability. Our vision is a tech-enabled world where
+                    businesses thrive responsibly.
+                </p>
+            </div>
+        </div>
+        <h2>Meet Our Team</h2>
+        <div class="team-section">
+            <div class="team-member">
+                <img class="team-photo" src="team1.jpg" alt="Team Member 1">
+                <div>
+                    <h3>John Doe</h3>
+                    <p>CEO & Founder</p>
+                    <p>John leads with a passion for innovation and years of experience in technology leadership.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img class="team-photo" src="team2.jpg" alt="Team Member 2">
+                <div>
+                    <h3>Jane Smith</h3>
+                    <p>Chief Sustainability Officer</p>
+                    <p>Jane is our expert in creating environmentally friendly technology solutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Rosla Technologies. All rights reserved.</p>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+    </div>
+</body>
+</html>
