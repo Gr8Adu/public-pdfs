@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .services-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px;
+        }
+        .service {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .service h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .service p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #555;
+        }
+        .service button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .service button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Website Logo" class="logo" style="max-width: 100px; height: auto;">
+
+    </div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/accessibility">Accessibility Settings</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Our Services</h1>
+        <p>Innovative solutions for a greener future</p>
+    </header>
+    <section class="services-container">
+        <div class="service">
+            <img src="{{ url_for('static', filename='images/evservices.jpg') }}" alt="EV Charging">
+            <div>
+                <h3>EV Charging</h3>
+                <p>Offering advanced and efficient EV charging stations for both residential and commercial spaces.</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="{{ url_for('static', filename='images/solarpannelservices.jpg') }}" alt="Solar Panels">
+            <div>
+                <h3>Solar Panel Installation</h3>
+                <p>Providing cutting-edge solar panel solutions to harness clean energy for your home and office.</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="{{ url_for('static', filename='images/meterservices.jpg') }}" alt="Smart Home Management">
+            <div>
+                <h3>Smart Home Management</h3>
+                <p>Enhance your home’s energy efficiency with innovative smart technology and seamless automation.</p>
+            </div>
+        </div>
+        <div class="service">
+            <div>
+                <h3>Green Tech Consultation</h3>
+                <p>Partner with our experts to develop sustainable strategies for your personal or business needs.</p>
+<button onclick="location.href='/signup'">Book Consultation</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p><a href="contactus.html">Contact Us</a> | <a href="policy.html">Privacy Policy</a> | <a href="about.html">Learn More</a> | <a href="#top">Back to Top</a></p>
+        <p>&copy; 2025 Rolsa Technologies</p>
+    </footer>
+<script src="{{ url_for('static', filename='accessibility.js') }}"></script>
+</body>
+</html>

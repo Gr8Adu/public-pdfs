@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="static/accessibility.js"></script>
+     <style>
+
+
+
+        main {
+            padding: 20px;
+        }
+
+        .contact-info {
+            background: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        .contact-info h2 {
+            color: #2c3e50;
+        }
+
+        .map-section {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        iframe {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            background: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #18bc9c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #14a286;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Website Logo" class="logo" style="max-width: 100px; height: auto;">
+
+    </div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/accessibility">Accessibility Settings</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h2>Our Location</h2>
+            <p>123 GreenTech Street, London, UK</p>
+            <h2>Email</h2>
+            <p>info@rolsa-tech.co.uk</p>
+            <h2>Phone</h2>
+            <p>+44 123 456 7890</p>
+        </section>
+        <section class="map-section">
+            <h2>Find Us</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d806.5070118045801!2d0.030788567588175688!3d51.52209806510866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a7d9a85e8d89%3A0x17763ae0406f6d64!2sNewham%20Sixth%20Form%20College!5e0!3m2!1sen!2suk!4v1743074252736!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section>
+            <h2>Send Us a Message</h2>
+            <form action="/submit-contact" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required placeholder="Briefly summarize your query">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Write your message here"></textarea>
+
+                <label for="attachment">Attach a File (optional):</label>
+                <input type="file" id="attachment" name="attachment">
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Rolsa Technologies</p>
+        <p><a href="contactus.html">Contact Us</a> | <a href="policy.html">Privacy Policy</a> | <a href="about.html">Learn More</a> | <a href="#top">Back to Top</a></p>
+    </footer>
+    <script src="{{ url_for('static', filename='accessibility.js') }}"></script>
+</body>
+</html>

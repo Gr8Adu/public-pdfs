@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Section Styles */
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%; /* Centralized content with margins */
+            background-color: #ffffff; /* White background for sections */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        }
+/* Header Styling */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #2F5D50; /* Earthy Green Background */
+            color: #EEF4F2; /* Light Text */
+            border-bottom: 5px solid #FAC93C; /* Yellow Accent Border */
+        }
+        section h2 {
+            font-size: 1.8rem;
+            color: #2F5D50; /* Blue text for headings */
+            margin-bottom: 15px;
+        }
+
+        section p, section ul {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333; /* Dark gray text for readability */
+        }
+
+        section ul {
+            list-style: none; /* Remove default list styling */
+            padding: 0;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        section ul li img {
+            margin-right: 10px;
+            width: 30px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Website Logo" class="logo" style="max-width: 100px; height: auto;">
+
+    </div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/accessibility">Accessibility Settings</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>About Us</h1>
+        <p>Your trusted partner in green energy solutions</p>
+    </header>
+    <section>
+        <h2>Our Mission</h2>
+        <p>At Rolsa Technologies, we believe in creating a better future through cutting-edge technology, green initiatives, and building meaningful relationships with our customers. Innovation is at the heart of everything we do.</p>
+    </section>
+    <section>
+        <h2>Meet Our Leadership Team</h2>
+        <div class="team-section">
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/ceoimageaboutus.jpg') }}" alt="CEO Profile Image" width="100" height="100">
+                <h3>John Doe</h3>
+                <p><strong>CEO</strong></p>
+                <p>John Doe Chief Executive Officer (CEO) John Doe is the founder and driving force behind Rolsa Technologies, a pioneering greentech company dedicated to transforming industries through sustainable innovation. With a passion for environmental stewardship, John launched Rolsa Technologies to tackle pressing global challenges, such as climate change and resource conservation, through groundbreaking technology solutions.</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/ctoimageaboutus.jpg') }}" alt="CTO Profile Image" width="100" height="100">
+                <h3>John Smith</h3>
+                <p><strong>CTO</strong></p>
+                <p>John Smith Chief Technology Officer (CTO) John Smith is a dynamic technology leader with over 20 years of experience in driving innovation across industries. As CTO, John oversees the development and implementation of cutting-edge technologies that propel the organization to new heights. His expertise in artificial intelligence and cloud computing has led to transformative solutions, boosting operational efficiency and customer satisfaction.</p>
+            </div>
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="{{ url_for('static', filename='images/cengineerimageaboutus.jpg') }}" alt="CSO Profile Image" width="100" height="100">
+                </div>
+                <h3>Jane Doe</h3>
+                <p><strong>Chief Sustainability Officer</strong></p>
+                <p>Jane Doe Chief Sustainability Officer (CSO) Jane Doe is a visionary sustainability leader with a proven track record of driving impactful change. With over 15 years of expertise in environmental and social governance (ESG), Jane has successfully integrated sustainable practices into global business strategies. Under her leadership, the organization has achieved a 50% reduction in waste and pioneered innovative renewable energy initiatives.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Our Values</h2>
+        <ul>
+            <li><strong>Innovation:</strong> We thrive on pushing boundaries.</li>
+            <li><strong>Sustainability:</strong> We are dedicated to eco-friendly practices.</li>
+            <li><strong>Connection:</strong> Building genuine relationships is at the core of our mission.</li>
+        </ul>
+    </section>
+    <footer>
+        <p><a href="contactus.html">Contact Us</a> | <a href="policy.html">Privacy Policy</a> | <a href="about.html">Learn More</a> | <a href="#top">Back to Top</a></p>
+        <p>&copy; 2025 Rolsa Technologies</p>
+    </footer>
+<script src="{{ url_for('static', filename='accessibility.js') }}"></script>
+</body>
+</html>
