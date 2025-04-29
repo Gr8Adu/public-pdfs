@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Rolsa Technologies</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EEF4F2;
+            color: #2F5D50;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background-color: #69B78D;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #2F5D50;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .dashboard-section {
+            padding: 20px;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: #F9F9F9;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #69B78D;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            color: #2F5D50;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #69B78D;
+            color: #FFF;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: #FAC93C;
+            color: #2F5D50;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Website Logo" class="logo" style="max-width: 100px; height: auto;">
+            </div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/dashboard" class="active">Dashboard</a></li>
+            <li><a href="/calculator">Carbon Calculator</a></li>
+            <li><a href="/tracker">Energy Tracker</a></li>
+            <li><a href="/consultation">Consultations</a></li>
+            <li><a href="/account">Account</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/">Log Out</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to Your Dashboard</h1>
+        <p>Manage your consultations, track your energy usage, and explore green energy solutions.</p>
+    </header>
+    <div class="dashboard-section">
+        <h2>Features</h2>
+        <div class="card">
+            <h3>Green Energy Products</h3>
+            <p>Explore a wide range of products, including solar panels, EV charging stations, and smart home energy systems.</p>
+            <a href="/products">View Products</a>
+        </div>
+        <div class="card">
+            <h3>Carbon Calculator</h3>
+            <p>Calculate your carbon footprint and learn ways to reduce your impact on the environment.</p>
+            <a href="/calculator">Start Calculating</a>
+        </div>
+        <div class="card">
+            <h3>Energy Tracker</h3>
+            <p>Track your energy consumption and optimize your usage for efficiency and savings.</p>
+            <a href="/tracker">Track Energy Usage</a>
+        </div>
+        <div class="card">
+            <h3>Consultations</h3>
+            <p>Schedule consultations with our experts to discuss solar panel installations, EV charging stations, or smart home systems.</p>
+            <a href="/consultation">Book a Consultation</a>
+        </div>
+    </div>
+    <footer>
+        <p><a href="/contact">Contact Us</a> | <a href="/policy">Privacy Policy</a> | <a href="/about">Learn More</a></p>
+        <p>&copy; 2025 Rolsa Technologies</p>
+    </footer>
+</body>
+</html>

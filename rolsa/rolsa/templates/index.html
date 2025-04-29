@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EEF4F2;
+            color: #2F5D50;
+        }
+
+        /* Navbar */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background-color: #69B78D;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #2F5D50;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(rgba(0, 123, 255, 0.5), rgba(0, 123, 255, 0.5)), url('{{ url_for('static', filename='images/homepagebanner.jpg') }}') no-repeat center center/cover;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Intro Section */
+        .intro {
+            text-align: center;
+            padding: 40px 20px;
+            margin: auto;
+            max-width: 800px;
+        }
+
+        .intro p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #2F5D50;
+        }
+
+        .intro button {
+            background-color: #69B78D;
+            color: #FFFFFF;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .intro button:hover {
+            background-color: #FAC93C;
+            color: #2F5D50;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 20px;
+        }
+
+        .feature {
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .feature h3 {
+            font-size: 20px;
+            color: #2F5D50;
+        }
+
+        .feature p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Website Features Section */
+        .website-features {
+            padding: 40px 20px;
+            margin: auto;
+            max-width: 1000px;
+        }
+
+        .website-features h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #2F5D50;
+            margin-bottom: 20px;
+        }
+
+        .website-features ul {
+            list-style-type: none;
+            padding: 0;
+            color: #555;
+        }
+
+        .website-features li {
+            font-size: 16px;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #F9F9F9;
+            border: 1px solid #69B78D;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .website-features li:hover {
+            background-color: #FAC93C;
+            color: #2F5D50;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #F9F9F9;
+            padding: 20px;
+            margin: 40px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .testimonials h3 {
+            font-size: 20px;
+            color: #2F5D50;
+        }
+
+        .testimonials p {
+            font-size: 14px;
+            color: #555;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #2F5D50;
+            color: #EEF4F2;
+            padding: 15px 20px;
+            border-top: 2px solid #FAC93C;
+        }
+
+        footer a {
+            color: #FAC93C;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Website Logo" class="logo" style="max-width: 100px; height: auto;">
+            </div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/accessibility">Accessibility Settings</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to Rolsa Technologies</h1>
+        <p>Empowering Sustainability through Innovation</p>
+    </header>
+    <div class="intro">
+        <p>Explore our services to learn how we can help you reduce your carbon footprint and make your energy usage smarter and greener.</p>
+        <button onclick="location.href='/services'">Learn More</button>
+    </div>
+    <section class="features">
+        <div class="feature">
+            <h3>Sustainability</h3>
+            <p>We focus on eco-friendly solutions that positively impact the environment.</p>
+        </div>
+        <div class="feature">
+            <h3>Innovation</h3>
+            <p>Leveraging cutting-edge technologies to provide smarter energy solutions.</p>
+        </div>
+        <div class="feature">
+            <h3>Cost Savings</h3>
+            <p>Helping you reduce energy costs while adopting greener practices.</p>
+        </div>
+    </section>
+    <section class="website-features">
+        <h2>Website Features</h2>
+        <ul>
+            <li>💻 Carbon Calculator Questionnaire: Understand your environmental impact.</li>
+            <li>📈 Energy Tracker: Monitor and optimize your energy usage.</li>
+            <li>📅 Scheduling Consultations: Book expert advice for green energy solutions.</li>
+        </ul>
+    </section>
+    <section class="testimonials">
+        <h3>What Our Customers Say</h3>
+        <p>"Rolsa Technologies transformed our energy usage and helped us save significantly!" - John D.</p>
+    </section>
+    <footer>
+        <p><a href="/contact">Contact Us</a> | <a href="/policy">Privacy Policy</a> | <a href="/about">Learn More</a> | <a href="#top">Back to Top</a></p>
+        <p>&copy; 2025 Rolsa Technologies</p>
+    </footer>
+<script src="{{ url_for('static', filename='accessibility.js') }}"></script>
+</body>
+</html>

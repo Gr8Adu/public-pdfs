@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Reduce Your Carbon Footprint</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* General Body Styling for Better Spacing */
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #69B78D; /* Vibrant Green */
+            padding: 15px 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            margin: 0 10px;
+            color: #FFFFFF; /* White for Contrast */
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #2F5D50; /* Earthy Green on Hover */
+    color: #EEF4F2; /* Light Text */
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #EEF4F2; /* Light Background */
+            color: #2F5D50; /* Earthy Green */
+            border-bottom: 4px solid #FAC93C; /* Yellow Accent */
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        /* Main Content Section */
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        article {
+            margin-top: 20px;
+        }
+
+        article h2 {
+            font-size: 1.8rem;
+            color: #2F5D50; /* Earthy Green */
+            margin-bottom: 10px;
+        }
+
+        article p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2F5D50; /* Earthy Green */
+            color: #EEF4F2; /* Light Text */
+            border-top: 4px solid #FAC93C; /* Yellow Accent */
+        }
+
+        footer a {
+            margin: 0 5px;
+            color: #FAC93C; /* Yellow Accent */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="navbar">
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Website Logo" class="logo" style="max-width: 100px; height: auto;">
+            </div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/accessibility">Accessibility Settings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Reduce Your Carbon Footprint</h1>
+    </header>
+
+    <!-- Blog Content -->
+    <div class="content">
+        <div class="image-section">
+            <img src="{{ url_for('static', filename='images/blogpost.jpg') }}" alt="Carbon Footprint Reduction Image">
+        </div>
+
+        <article>
+            <div class="card">
+                <h2>What is Carbon Footprint?</h2>
+                <p>A carbon footprint represents the total greenhouse gas emissions...</p>
+            </div>
+            <p>A carbon footprint represents the total greenhouse gas emissions caused by an individual, organization, event, or product. These emissions are typically expressed as tons of carbon dioxide (CO2) equivalent. Every action we take—such as driving a car, heating our homes, or buying goods—leaves a carbon footprint, contributing to global warming and climate change. Understanding your carbon footprint is the first step toward reducing it.</p>
+            <h2>Why Does it Matter?</h2>
+            <p>A high carbon footprint accelerates the greenhouse effect, resulting in rising temperatures, melting ice caps, and extreme weather events. If we collectively do not take action, the consequences of climate change could become irreversible. Reducing your carbon footprint means protecting not only the planet but also future generations from environmental disaster.</p>
+            <h2>Are You at Risk of a High Carbon Footprint?</h2>
+            <p>You may unknowingly have a high carbon footprint if your lifestyle heavily relies on fossil fuels and non-sustainable practices. For example, if you commute daily in a gasoline-powered car, consume a meat-heavy diet, or frequently buy new products instead of reusing or recycling, your carbon footprint could be dangerously high. It’s essential to assess and address these habits.</p>
+            <h2>How to Reduce Your Carbon Footprint</h2>
+            <p>Reducing your carbon footprint starts with small, impactful steps in your daily life. Here are some effective strategies:</p>
+            <p><strong>Switch to Renewable Energy:</strong> Transition to renewable energy sources like solar, wind, or hydroelectric power. Many energy providers now offer green energy plans, which can significantly reduce emissions from electricity usage.</p>
+            <p><strong>Optimize Transportation:</strong> Reduce your reliance on fossil fuel-powered vehicles by carpooling, using public transportation, biking, or walking whenever possible. If you own a car, consider switching to an electric or hybrid model.</p>
+            <p><strong>Adopt a Sustainable Diet:</strong> Reducing meat and dairy consumption can lower greenhouse gas emissions, as livestock farming is a significant contributor to methane emissions. Opt for plant-based meals, which are healthier for you and the environment.</p>
+            <p><strong>Improve Energy Efficiency:</strong> Upgrade your home with energy-efficient appliances, LED lighting, and proper insulation to cut down on energy consumption. Always switch off electronic devices when they’re not in use.</p>
+            <p><strong>Recycle and Reuse:</strong> Make recycling a habit by segregating waste at home and supporting recycling programs. Reusing items and repairing broken goods instead of throwing them away also helps reduce landfill waste.</p>
+            <p><strong>Consume Mindfully:</strong> Shift away from fast fashion and over-consumption. Instead, buy durable products, support sustainable brands, and invest in quality over quantity.</p>
+        </article>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <script src="static/accessibility.js"></script>
+        <p><a href="contactus.html">Contact Us</a> | <a href="policy.html">Privacy Policy</a> | <a href="about.html">Learn More</a> | <a href="#top">Back to Top</a></p>
+        <p>&copy; 2025 Rolsa Technologies</p>
+    </footer>
+<script src="{{ url_for('static', filename='accessibility.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Settings</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="navbar">
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Website Logo" class="logo" style="max-width: 100px; height: auto;">
+            </div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/accessibility" class="active">Accessibility Settings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Accessibility Settings</h1>
+        <form id="accessibility-form">
+            <label for="theme-toggle">Theme:</label>
+            <select id="theme-toggle">
+                <option value="light">Light Mode</option>
+                <option value="dark">Dark Mode</option>
+                <option value="high-contrast">High Contrast</option>
+            </select>
+
+            <label for="font-size-toggle">Font Size:</label>
+            <select id="font-size-toggle">
+                <option value="small">Small</option>
+                <option value="medium" selected>Medium</option>
+                <option value="large">Large</option>
+                <option value="xlarge">Extra Large</option>
+            </select>
+
+            <button type="button" onclick="saveSettings()">Save Settings</button>
+            <button type="button" onclick="resetSettings()">Reset to Default</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p><a href="contactus.html">Contact Us</a> | <a href="policy.html">Privacy Policy</a> | <a href="about.html">Learn More</a> | <a href="#top">Back to Top</a></p>
+        <p>&copy; 2025 Rolsa Technologies</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="{{ url_for('static', filename='accessibility.js') }}"></script>
+</body>
+</html>

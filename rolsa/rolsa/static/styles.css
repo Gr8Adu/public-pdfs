@@ -1,0 +1,145 @@
+/* Base Styles */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EEF4F2; /* Soft White with a Greenish Hue */
+    color: #2F5D50; /* Earthy Green for Text */
+    transition: background-color 0.3s, color 0.3s, font-size 0.3s;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #69B78D; /* Vibrant Green */
+    padding: 15px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: #FFFFFF; /* White Text for Contrast */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #2F5D50; /* Earthy Green on Hover */
+    color: #EEF4F2; /* Light Text */
+}
+
+.navbar a.active {
+    background-color: #2F5D50; /* Yellow Accent */
+    color: #EEF4F2; /* Earthy Green */
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+/* Buttons */
+button {
+    background-color: #69B78D; /* Vibrant Green */
+    color: #FFFFFF; /* White Text */
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #FAC93C; /* Yellow Accent */
+    color: #2F5D50; /* Earthy Green */
+}
+
+/* Forms */
+form {
+    background-color: #EEF4F2; /* Light Background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #2F5D50; /* Earthy Green */
+}
+
+select, input {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #69B78D; /* Vibrant Green Border */
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2F5D50; /* Earthy Green */
+    color: #EEF4F2; /* Light Text */
+    padding: 15px 0;
+    border-top: 2px solid #FAC93C; /* Yellow Accent */
+}
+
+footer a {
+    color: #FAC93C; /* Yellow Accent */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Accessibility Modes */
+body.accessible-light {
+    background-color: #FFFFFF; /* Pure White for Light Mode */
+    color: #2F5D50; /* Green Text */
+}
+
+body.accessible-dark {
+    background-color: #121212; /* Dark Mode Background */
+    color: #2F5D50; /* Green Text for Contrast */
+}
+
+body.accessible-high-contrast {
+    background-color: #000000; /* High Contrast Background */
+    color: #FAC93C; /* Yellow Accent Text */
+}
+
+/* Font Size Adjustments */
+body.font-small {
+    font-size: 14px;
+}
+
+body.font-medium {
+    font-size: 16px;
+}
+
+body.font-large {
+    font-size: 18px;
+}
+
+body.font-xlarge {
+    font-size: 20px;
+}
